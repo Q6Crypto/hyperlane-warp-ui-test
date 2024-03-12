@@ -56,9 +56,3 @@ pulsechaintestnet:
       apiUrl: https://api.scan.v4.testnet.pulsechain.com/api/v2 # String: Base URL for the explorer API
       # Optional fields:
       family: blockscout # ExplorerFamily: See ExplorerFamily for valid values
-bsctestnet:
-  rpcUrls:
-    - http: https://bsc-testnet.blockpi.network/v1/rpc/42800b32dc4f1cad9fc147fb8452aebd49b01072
-fuji:
-  rpcUrls:
-    - http: https://avalanche-fuji.blockpi.network/v1/rpc/700e8ae152d1e3d7b6da02fb571e658f66fe23ff
