@@ -18,3 +18,47 @@
 #   protocol: ethereum
 #   rpcUrls:
 #     - http: http://127.0.0.1:8555
+pulsechain:
+  name: pulsechain
+  chainId: 369
+  domainId: 369
+  protocol: ethereum
+  rpcUrls:
+    - http: https://rpc-pulsechain.g4mm4.io
+  isTestnet: false
+  nativeToken:
+    name: Pulse # String
+    symbol: PLS # String
+    decimals: 18 # Number
+  blockExplorers: # Array: List of BlockExplorer configs
+    # Required fields:
+    - name: Pulsechain Explorer # String: Human-readable name for the explorer
+      url: https://scan.9mm.pro # String: Base URL for the explorer
+      apiUrl: https://api.scan.pulsechain.com/api/v2 # String: Base URL for the explorer API
+      # Optional fields:
+      family: blockscout # ExplorerFamily: See ExplorerFamily for valid values
+pulsechaintestnet:
+  name: pulsechaintestnet
+  chainId: 943
+  domainId: 943
+  protocol: ethereum
+  rpcUrls:
+    - http: https://rpc-testnet-pulsechain.g4mm4.io
+  isTestnet: true
+  nativeToken:
+    name: Pulse # String
+    symbol: PLS # String
+    decimals: 18 # Number
+  blockExplorers: # Array: List of BlockExplorer configs
+    # Required fields:
+    - name: Pulsechain Testnet Explorer # String: Human-readable name for the explorer
+      url: https://scan.v4.testnet.pulsechain.com # String: Base URL for the explorer
+      apiUrl: https://api.scan.v4.testnet.pulsechain.com/api/v2 # String: Base URL for the explorer API
+      # Optional fields:
+      family: blockscout # ExplorerFamily: See ExplorerFamily for valid values
+bsctestnet:
+  rpcUrls:
+    - http: https://bsc-testnet.blockpi.network/v1/rpc/42800b32dc4f1cad9fc147fb8452aebd49b01072
+fuji:
+  rpcUrls:
+    - http: https://avalanche-fuji.blockpi.network/v1/rpc/700e8ae152d1e3d7b6da02fb571e658f66fe23ff
